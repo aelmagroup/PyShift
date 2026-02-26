@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyShift — MATLAB to Python Migration Services</title>
+  <meta name="description" content="Professional MATLAB to Python code transcoding. Eliminate expensive licenses, unlock open-source innovation, and future-proof your engineering stack.">
+  <meta name="keywords" content="MATLAB to Python, code migration, transcoding, open source, engineering, scientific computing">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pyshift.dev">
+  <meta property="og:title" content="PyShift — MATLAB to Python Migration Services">
+  <meta property="og:description" content="Convert your MATLAB codebase into clean, production-ready Python. Reduce costs. Scale freely.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pyshift.dev">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="logo/logo.svg" alt="PyShift logo" width="28" height="28">
+        <span>PyShift</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#cost" data-i18n="nav.cost">The Cost Problem</a></li>
+        <li><a href="#why-python" data-i18n="nav.why_python">Why Python</a></li>
+        <li><a href="#service" data-i18n="nav.service">Our Service</a></li>
+        <li><a href="#audience" data-i18n="nav.audience">Who It's For</a></li>
+        <li><button class="lang-switch" id="lang-switch" aria-label="Switch language">FR</button></li>
+        <li><a href="#contact" class="btn btn-sm" data-i18n="nav.get_started">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="fade-in">
+        <span class="badge" data-i18n="hero.badge">MATLAB &rarr; Python Migration</span>
+        <h1 data-i18n="hero.title">Stop Paying for MATLAB&nbsp;Licenses.<br>Move to Python.</h1>
+        <p class="hero-sub" data-i18n="hero.sub">We convert your MATLAB code into clean, production-ready Python &mdash; so you can scale freely, reduce costs, and embrace the open-source&nbsp;ecosystem.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_primary">Get in Touch</a>
+          <a href="#cost" class="btn btn-ghost" data-i18n="hero.cta_secondary">Learn More &darr;</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cost Problem Section -->
+  <section class="section" id="cost">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label" data-i18n="cost.label">The Problem</span>
+        <h2 data-i18n="cost.title">MATLAB Licensing Costs Add Up Fast</h2>
+        <p class="section-sub" data-i18n="cost.sub">Proprietary toolchains create long-term financial and operational dependencies that grow with your team.</p>
+      </div>
+
+      <div class="cost-grid fade-in">
+        <div class="cost-card cost-card--proprietary">
+          <div class="cost-card-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/></svg>
+            <h3 data-i18n="cost.prop_header">Proprietary License Costs</h3>
+          </div>
+          <ul>
+            <li>
+              <strong data-i18n="cost.matlab_label">MATLAB Base License</strong>
+              <span data-i18n="cost.matlab_desc">Thousands per user per year</span>
+            </li>
+            <li>
+              <strong data-i18n="cost.simulink_label">Simulink</strong>
+              <span data-i18n="cost.simulink_desc">Separate license required</span>
+            </li>
+            <li>
+              <strong data-i18n="cost.parallel_label">Parallel Computing Toolbox</strong>
+              <span data-i18n="cost.parallel_desc">Additional per-user cost</span>
+            </li>
+            <li>
+              <strong data-i18n="cost.optim_label">Optimization Toolbox</strong>
+              <span data-i18n="cost.optim_desc">Additional per-user cost</span>
+            </li>
+            <li>
+              <strong data-i18n="cost.signal_label">Signal Processing Toolbox</strong>
+              <span data-i18n="cost.signal_desc">Additional per-user cost</span>
+            </li>
+          </ul>
+          <div class="cost-card-footer cost-card-footer--bad">
+            <span data-i18n="cost.footer_bad">Costs multiply with every new user and toolbox</span>
+          </div>
+        </div>
+
+        <div class="cost-vs">
+          <span>vs</span>
+        </div>
+
+        <div class="cost-card cost-card--open">
+          <div class="cost-card-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 data-i18n="cost.open_header">Open-Source Ecosystem</h3>
+          </div>
+          <ul>
+            <li>
+              <strong>Python</strong>
+              <span data-i18n="cost.free">Free &amp; open-source</span>
+            </li>
+            <li>
+              <strong>NumPy / SciPy</strong>
+              <span data-i18n="cost.free2">Free &amp; open-source</span>
+            </li>
+            <li>
+              <strong>Dask / Multiprocessing</strong>
+              <span data-i18n="cost.free3">Free &amp; open-source</span>
+            </li>
+            <li>
+              <strong>SciPy Optimize</strong>
+              <span data-i18n="cost.free4">Free &amp; open-source</span>
+            </li>
+            <li>
+              <strong>SciPy Signal</strong>
+              <span data-i18n="cost.free5">Free &amp; open-source</span>
+            </li>
+          </ul>
+          <div class="cost-card-footer cost-card-footer--good">
+            <span data-i18n="cost.footer_good">Zero licensing costs, regardless of team size</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cost-note fade-in">
+        <p data-i18n="cost.note">Enterprise MATLAB licenses can cost thousands of dollars per user per year. Each toolbox is sold separately, and scaling your team multiplies these costs significantly. Long-term dependency on proprietary software increases operational expenses and limits flexibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Python Section -->
+  <section class="section section--alt" id="why-python">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label" data-i18n="python.label">The Alternative</span>
+        <h2 data-i18n="python.title">Why Python Is the Future of Engineering</h2>
+        <p class="section-sub" data-i18n="python.sub">Python has become the standard language for scientific computing, data science, and AI &mdash; backed by a global open-source community.</p>
+      </div>
+
+      <div class="advantages-grid fade-in">
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="python.opensource_title">Open-Source</h3>
+          <p data-i18n="python.opensource_desc">No licensing costs, ever. Free to use, modify, and distribute.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="python.community_title">Global Community</h3>
+          <p data-i18n="python.community_desc">Millions of developers. Extensive documentation, tutorials, and support.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="python.ecosystem_title">Rich Ecosystem</h3>
+          <p data-i18n="python.ecosystem_desc">NumPy, SciPy, Pandas, Matplotlib &mdash; everything you need for scientific computing.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0112 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="python.ai_title">AI &amp; ML Ready</h3>
+          <p data-i18n="python.ai_desc">PyTorch, TensorFlow, scikit-learn &mdash; the industry standard for machine learning.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="python.cloud_title">Cloud &amp; Web Ready</h3>
+          <p data-i18n="python.cloud_desc">Seamless integration with web services, APIs, and cloud infrastructure.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="python.devops_title">DevOps Friendly</h3>
+          <p data-i18n="python.devops_desc">CI/CD pipelines, Docker containers, automated testing &mdash; all native.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="python.container_title">Containerization</h3>
+          <p data-i18n="python.container_desc">Docker-ready from day one. Deploy anywhere, reproducibly.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M22 21v-2a4 4 0 00-3-3.87" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="python.talent_title">Larger Talent Pool</h3>
+          <p data-i18n="python.talent_desc">Python developers are everywhere. Hiring and onboarding become easier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section class="section" id="service">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label" data-i18n="service.label">Our Service</span>
+        <h2 data-i18n="service.title">From MATLAB to Production-Ready&nbsp;Python</h2>
+        <p class="section-sub" data-i18n="service.sub">We analyze your MATLAB codebase and deliver clean, documented, optimized Python code &mdash; with full functional equivalence. We also transform proprietary Simulink block-diagram models into maintainable, scalable Python simulation architectures.</p>
+      </div>
+
+      <div class="process-grid fade-in">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3 data-i18n="service.step1_title">Code Audit</h3>
+          <p data-i18n="service.step1_desc">We assess your existing MATLAB codebase, identify dependencies, toolbox usage, and complexity.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3 data-i18n="service.step2_title">Architecture Mapping</h3>
+          <p data-i18n="service.step2_desc">We design the target Python architecture, mapping MATLAB constructs to Pythonic equivalents.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3 data-i18n="service.step3_title">Transcoding &amp; Optimization</h3>
+          <p data-i18n="service.step3_desc">We convert your code with a focus on performance, readability, and adherence to Python best practices.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3 data-i18n="service.step4_title">Validation &amp; Testing</h3>
+          <p data-i18n="service.step4_desc">We verify functional equivalence through comprehensive testing and deliver full documentation.</p>
+        </div>
+      </div>
+
+      <div class="guarantees fade-in">
+        <div class="guarantee">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="service.g1">Functional equivalence</span>
+        </div>
+        <div class="guarantee">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="service.g2">Performance optimization</span>
+        </div>
+        <div class="guarantee">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="service.g3">Clean, readable code</span>
+        </div>
+        <div class="guarantee">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="service.g4">Full documentation</span>
+        </div>
+        <div class="guarantee">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="service.g5">Optional modern refactoring</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Is It For Section -->
+  <section class="section section--alt" id="audience">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label" data-i18n="audience.label">Who It's For</span>
+        <h2 data-i18n="audience.title">Built for Teams That Need to&nbsp;Scale</h2>
+        <p class="section-sub" data-i18n="audience.sub">Whether you're a startup or an enterprise, if your stack depends on MATLAB, we can help you move forward.</p>
+      </div>
+
+      <div class="audience-grid fade-in">
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 24V10l10-6 10 6v14H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="10" y="16" width="8" height="8" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 data-i18n="audience.engineering_title">Engineering Teams</h3>
+          <p data-i18n="audience.engineering_desc">Modernize your simulation and analysis pipelines without disrupting delivery.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M6 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="audience.research_title">Research Labs</h3>
+          <p data-i18n="audience.research_desc">Transition research code to reproducible, shareable, open-source Python.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4l10 6v8l-10 6L4 18v-8l10-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="audience.startup_title">Startups Scaling Up</h3>
+          <p data-i18n="audience.startup_desc">Eliminate licensing overhead as your team grows and your product matures.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="6" width="22" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 12h22" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 data-i18n="audience.enterprise_title">Enterprises</h3>
+          <p data-i18n="audience.enterprise_desc">Reduce operational costs and consolidate your technology stack at scale.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4v6M14 18v6M4 14h6M18 14h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="14" cy="14" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 data-i18n="audience.ai_title">AI-Focused Companies</h3>
+          <p data-i18n="audience.ai_desc">Unlock the full AI/ML ecosystem by moving to Python natively.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 22V8h4v14M12 22V4h4v18M18 22v-8h4v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="audience.academics_title">Academics</h3>
+          <p data-i18n="audience.academics_desc">Enable students and researchers to work with open, reproducible tools used across industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Section -->
+  <section class="section section--roi" id="roi">
+    <div class="container">
+      <div class="roi-content fade-in">
+        <span class="label label--light" data-i18n="roi.label">Return on Investment</span>
+        <h2 data-i18n="roi.title">Eliminate Recurring Costs.<br>Unlock AI-Driven Innovation.</h2>
+        <p data-i18n="roi.desc">Switching to Python removes the burden of escalating license fees. Your team gains access to the world's largest developer ecosystem, cloud-native tooling, and cutting-edge AI frameworks &mdash; at zero licensing cost.</p>
+        <div class="roi-stats">
+          <div class="roi-stat">
+            <span class="roi-stat-value">$0</span>
+            <span class="roi-stat-label" data-i18n="roi.stat1_label">Python licensing cost</span>
+          </div>
+          <div class="roi-stat">
+            <span class="roi-stat-value">&infin;</span>
+            <span class="roi-stat-label" data-i18n="roi.stat2_label">Scalability, no per-seat limit</span>
+          </div>
+          <div class="roi-stat">
+            <span class="roi-stat-value">10x</span>
+            <span class="roi-stat-label" data-i18n="roi.stat3_label">Larger developer pool</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-light" data-i18n="roi.cta">Start Saving Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label" data-i18n="contact.label">Get Started</span>
+        <h2 data-i18n="contact.title">Contact Us</h2>
+        <p class="section-sub" data-i18n="contact.sub">Tell us about your project. We'll provide pricing based on the size and complexity of your MATLAB codebase.</p>
+      </div>
+
+      <form class="contact-form fade-in" id="contact-form" action="#" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" data-i18n="contact.name_label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" data-i18n-placeholder="contact.name_ph" required>
+          </div>
+          <div class="form-group">
+            <label for="company" data-i18n="contact.company_label">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your company name" data-i18n-placeholder="contact.company_ph">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="contact.email_label">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" data-i18n-placeholder="contact.email_ph" required>
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="contact.message_label">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your MATLAB codebase, the toolboxes you use, and when you'd like to get started." data-i18n-placeholder="contact.message_ph"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.submit">Send Message</button>
+      </form>
+
+      <div class="form-success" id="form-success">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="#22c55e" stroke-width="2"/><path d="M15 24l6 6 12-12" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 data-i18n="contact.success_title">Thank you!</h3>
+        <p data-i18n="contact.success_desc">We've received your request. Our team will reach out within 24 hours with your personalized migration plan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="logo/logo.svg" alt="PyShift logo" width="24" height="24">
+          <span>PyShift</span>
+        </a>
+        <p data-i18n="footer.brand_desc">Professional MATLAB to Python migration services.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_header">Navigation</h4>
+          <a href="#cost" data-i18n="footer.nav_cost">The Cost Problem</a>
+          <a href="#why-python" data-i18n="footer.nav_python">Why Python</a>
+          <a href="#service" data-i18n="footer.nav_service">Our Service</a>
+          <a href="#contact" data-i18n="footer.nav_contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact_header">Contact</h4>
+          <a href="mailto:hello@pyshift.dev">hello@pyshift.dev</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-i18n="footer.copyright">&copy; 2026 PyShift. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
