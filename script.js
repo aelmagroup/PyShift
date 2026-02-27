@@ -451,25 +451,45 @@
   }
 
   /* ==========================================
-     Contact form submission simulation
+     EmailJS — Contact form
+     Replace the three constants below with
+     your own values from emailjs.com
      ========================================== */
+
+  var EMAILJS_PUBLIC_KEY  = 'Erk2S7v24drzTzV-D';
+  var EMAILJS_SERVICE_ID  = 'service_sx827tt';
+  var EMAILJS_TEMPLATE_ID = 'template_t494yyt';
+
+  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
   var contactForm = document.getElementById('contact-form');
   var formSuccess = document.getElementById('form-success');
+  var submitBtn   = contactForm.querySelector('button[type="submit"]');
 
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    var name = document.getElementById('name').value.trim();
+    var name  = document.getElementById('name').value.trim();
     var email = document.getElementById('email').value.trim();
 
-    if (!name || !email) {
-      return;
-    }
+    if (!name || !email) return;
 
-    contactForm.style.display = 'none';
-    formSuccess.classList.add('visible');
-    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    submitBtn.disabled = true;
+    var originalText = submitBtn.textContent;
+    submitBtn.textContent = '…';
+
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm)
+      .then(function () {
+        contactForm.style.display = 'none';
+        formSuccess.classList.add('visible');
+        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(function (err) {
+        console.error('EmailJS error:', err);
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        alert('Something went wrong. Please try again or email us directly.');
+      });
   });
 
   /* ==========================================
